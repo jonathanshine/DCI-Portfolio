@@ -1,8 +1,151 @@
 /* GLOBAL STYLING -------------------------------------- */
+
+        /* GOOGLE FONTS -------------------- */
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        /* END FONTS ----------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 2px dotted lime; */
 }
 
+body {
+    background-color: dodgerblue;
+    font-size: 62.5%;
+}
 /* END GLOBAL ------------------------------------------ */
+
+
+
+
+
+/* NAVBAR STYLING -------------------------------------- */
+.mobile-nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.mobile-nav ul li a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+#home-btn {
+    width: 45%;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.drop-btn {
+    color: white;
+    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: all 1s ease-in-out; */
+    width: 100%;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    border-top: 1px solid white;
+}
+
+.dropdown li {
+    border-bottom: 1px solid white;
+}
+
+#burger-menu {
+    display: none;
+}
+
+#burger-menu:checked ~ .dropdown {
+    display: block;
+    top: 51px;
+}
+
+.browser-nav {
+    display: none;
+}
+
+        /* BROWSER/TABLET MEDIA QUERIES------------- */
+        @media (min-width: 768px) {
+            .mobile-nav {
+                display: none;
+            }
+
+            .browser-nav {
+                display: block;
+                position: fixed;
+                width: 100%;
+                background-color: black;
+            }
+            
+            .browser-nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .browser-nav ul li {
+                list-style: none;
+                width: 100%;
+                text-align: center;
+                font-size: 1.25rem;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            .browser-nav ul li:nth-child(1),
+            .browser-nav ul li:nth-child(2) {
+                border-right: 1px solid white;
+            }
+            
+            .browser-nav ul li a {
+                display: block;
+                padding: 1rem;
+                width: 100%;
+                text-decoration: none;
+                color: white;
+            }
+
+            #home-btn {
+                width: 25%;
+                font-weight: 600;
+                font-size: 2rem;
+                border: none;
+            }
+        }      
+/* END NAVBAR ------------------------------------------ */
