@@ -1,8 +1,99 @@
 /* GLOBAL STYLING -------------------------------------- */
+
+        /* GOOGLE FONTS -------------------- */
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        /* END FONTS ----------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 2px dotted lime; */
+}
+
+body {
+    background-color: dodgerblue;
+    font-size: 62.5%;
 }
 
 /* END GLOBAL ------------------------------------------ */
+
+
+
+
+
+/* NAVBAR STYLING -------------------------------------- */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.nav-top > li {
+    width: 45%;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: bold;
+}
+
+.drop-btn {
+    color: white;
+    padding: 0.3rem;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: all 1s ease-in-out; */
+    width: 100%;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    border-top: 1px solid white;
+}
+
+.dropdown li {
+    border-bottom: 1px solid white;
+}
+
+#burger-menu:checked ~ .dropdown {
+    display: block;
+    top: 51px;
+}
+
+#burger-menu {
+    display: none;
+}
+/* END NAVBAR ------------------------------------------ */
