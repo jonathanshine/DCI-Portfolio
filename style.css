@@ -15,6 +15,19 @@ body {
     background-color: dodgerblue;
     font-size: 62.5%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
 /* END GLOBAL ------------------------------------------ */
 
 
@@ -149,3 +162,94 @@ body {
             }
         }      
 /* END NAVBAR ------------------------------------------ */
+
+
+
+
+
+/* HOMEPAGE STYLING ------------------------------------ */
+main {
+    padding-top: 3.5rem;
+    /* height: 100vh; */
+}
+
+.homepage-hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.homepage-title {
+    font-size: 3rem;
+}
+
+.homepage-title p {
+    text-align: center;
+}
+
+.homepage-title + p {
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.tools-section {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.tools-title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width: 90%;
+    /* padding: 2rem; */
+    margin: 1rem auto;
+    font-size: 1.25rem;
+}
+
+.logo-gallery h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo-gallery p {
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0.75rem;
+}
+
+.logo-gallery img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.languages-box,
+.tools-box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 2px solid dodgerblue;
+    border-radius: 3px;
+}
+
+.logo-container {
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+}
+/* END HOMEPAGE ---------------------------------------- */
