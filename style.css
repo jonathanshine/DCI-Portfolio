@@ -70,11 +70,13 @@ p {
     width: 95%;
 }
 
-#home-btn {
+#name-btn {
     width: 45%;
+    padding: 1rem;
     font-family: "Libre Franklin", sans-serif;
     font-weight: bold;
     font-size: 1rem;
+    color: white;
 }
 
 .drop-btn {
@@ -146,7 +148,8 @@ p {
             }
 
             .browser-nav ul li:nth-child(1),
-            .browser-nav ul li:nth-child(2) {
+            .browser-nav ul li:nth-child(2),
+            .browser-nav ul li:nth-child(3) {
                 border-right: 1px solid white;
             }
             
@@ -158,7 +161,7 @@ p {
                 color: white;
             }
 
-            #home-btn {
+            #name-btn {
                 width: 25%;
                 font-weight: 600;
                 font-size: 2rem;
@@ -180,7 +183,7 @@ main {
 .homepage-hero {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 90%;
     height: 60vh;
     margin: auto;
@@ -200,6 +203,7 @@ main {
 .homepage-title + p {
     font-size: 1rem;
     line-height: 1.75;
+    text-align: justify;
 }
 
 .tools-section {
@@ -340,3 +344,150 @@ footer i {
             }
         }
 /* END FOOTER ------------------------------------------ */
+
+
+
+
+
+/* PROJECTS PAGE STYLING ------------------------------- */
+.projectspage-hero {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.projectspage-title {
+    font-size: 3rem;
+    color: #FFA205;
+    text-align: center;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.projectspage-title + p {
+    font-size: 1rem;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.projects-section {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.projects-title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width: 90%;
+    /* padding: 2rem; */
+    margin: 1rem auto;
+    font-size: 1.25rem;
+}
+
+.projects-title i {
+    color: #FFA205;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.projects-gallery h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-gallery p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.fcc-box,
+.other-box {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    /* border: 2px solid dodgerblue; */
+    border-radius: 5px;
+    background-color: #6BB5FF;
+}
+
+.projects-card {
+    width: 20.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55); */
+    /* border: 1px solid dodgerblue; */
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+.projects-card img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 150px;
+}
+
+.other-box .projects-card p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+        /* BROWSER/TABLET MEDIA QUERIES------------- */
+        @media (min-width: 769px) {
+            main {
+                padding-top: 5.5rem;
+            }
+
+            .projectspage-hero {
+                flex-flow: row-reverse nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .projectspage-title {
+                font-size: 5rem;
+                padding: 5rem;
+            }
+
+            .projectspage-title p {
+                width: 30vw;
+            }
+
+            .projectspage-title + p {
+                font-size: 1.5rem;
+
+            }
+
+            .projects-title {
+                font-size: 1.5rem;
+            }
+
+            .projects-container {
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            .projects-card {
+                width: 30rem;
+                padding: 2rem;
+            }
+
+            .projects-card img {
+                height: 200px;
+                width: auto;
+            }
+        }
+/* END PROJECTS ---------------------------------------- */
