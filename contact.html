@@ -37,11 +37,11 @@
         <ul>
             <li id="name-btn">Jonathan Shine</li>
                 <ul class="browser-links">
-                    <li class="current-page"><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="https://github.com/jonathanshine" target="_blank">GitHub</a></li>
                     <li><a href="https://www.freecodecamp.org/jonathanshine" target="_blank">freeCodeCamp</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="current-page"><a href="./contact.html">Contact</a></li>
                 </ul>
         </ul>
     </nav>
@@ -49,16 +49,36 @@
     <div id="top"></div>
 
     <main>
-        <section class="homepage-hero">
-            <div class="homepage-title">
-                <h1>Hello,</h1>
-                <p>I'm Jon -</p>
+        <section class="contact-hero">
+            <div class="contact-title">
+                <h1>Get</h1>
+                <p>in touch!</p>
             </div>
 
-            <p>- an aspiring web developer/opera singer living in Berlin. My passion for logic and technology led me to start teaching myself responsive web design and programming and my quest for clean code and useful applications has brought me to the Web Development Program at Digital Career Institute.</p>
+            <form class="contact-container" action="#" method="POST">
+                
+                <label for="fname">First name:
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+
+                <label for="lname">Last name:
+                    <input type="text" name="lname" id="lname" required>
+                </label>
+                
+                <label for="email">Email address:
+                    <input type="email" name="email" id="email" required>
+                </label>
+
+                <label for="message">Leave me a message here:
+                    <textarea name="message" id="message" cols="30" rows="10" minlength="5" required></textarea>
+                </label>
+
+                <input type="submit" name="submit" id="submit">
+                
+            </form>
         </section>
 
-        <section class="tools-section">
+        <!-- <section class="tools-section">
             
             <div class="tools-title">
                 
@@ -110,7 +130,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
